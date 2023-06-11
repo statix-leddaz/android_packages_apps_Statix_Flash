@@ -16,6 +16,7 @@ import com.statix.flash.camera.CameraFacing
 import com.statix.flash.camera.CameraMode
 import com.statix.flash.camera.FlashMode
 import com.statix.flash.camera.FrameRate
+import com.statix.flash.utils.GestureActions
 import com.statix.flash.utils.GridMode
 import com.statix.flash.utils.TimerMode
 
@@ -335,3 +336,16 @@ private const val VIDEO_STABILIZATION_KEY = "video_stabilization"
 private const val VIDEO_STABILIZATION_DEFAULT = true
 internal val SharedPreferences.videoStabilization: Boolean
     get() = getBoolean(VIDEO_STABILIZATION_KEY, VIDEO_STABILIZATION_DEFAULT)
+
+// Volume buttons action
+private const val VOLUME_BUTTONS_ACTION_KEY = "volume_buttons_action"
+private const val VOLUME_BUTTONS_ACTION_DEFAULT = "shutter"
+internal val SharedPreferences.volumeButtonsAction: GestureActions
+    get() = when (getString(VOLUME_BUTTONS_ACTION_KEY, VOLUME_BUTTONS_ACTION_DEFAULT)) {
+        "shutter" -> GestureActions.SHUTTER
+        "zoom" -> GestureActions.ZOOM
+        "volume" -> GestureActions.VOLUME
+        "nothing" -> GestureActions.NOTHING
+        // Default to shutter
+        else -> GestureActions.SHUTTER
+    }
