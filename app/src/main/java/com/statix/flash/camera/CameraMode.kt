@@ -6,7 +6,7 @@
 package com.statix.flash.camera
 
 enum class CameraMode {
-    QR,
     PHOTO,
     VIDEO,
+    QR,
 }
