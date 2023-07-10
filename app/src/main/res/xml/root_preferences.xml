@@ -90,4 +90,15 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="@string/advanced_header">
+
+        <Preference
+            app:fragment="com.statix.flash.SettingsActivity$ProcessingSettingsFragment"
+            app:iconSpaceReserved="false"
+            app:title="@string/processing_title" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
