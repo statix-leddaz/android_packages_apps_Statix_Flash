@@ -13,6 +13,6 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "StatixCamera"
+rootProject.name = "Flash"
 include(":app")
 include(":lens_launcher")
