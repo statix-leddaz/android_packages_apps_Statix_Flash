@@ -5,7 +5,7 @@
 //
 
 android_app {
-    name: "Aperture",
+    name: "Flash",
 
     defaults: ["aapt_version_code_defaults"],
 
@@ -24,24 +24,24 @@ android_app {
         "androidx.exifinterface_exifinterface",
         "androidx.lifecycle_lifecycle-viewmodel-ktx",
         "androidx.preference_preference",
-        "Aperture_com.google.android.material_material",
-        "Aperture_androidx.camera_camera-core",
-        "Aperture_androidx.camera_camera-camera2",
-        "Aperture_androidx.camera_camera-lifecycle",
-        "Aperture_androidx.camera_camera-video",
-        "Aperture_androidx.camera_camera-view",
-        "Aperture_androidx.camera_camera-extensions",
-        "Aperture_androidx.media3_media3-exoplayer",
-        "Aperture_androidx.media3_media3-ui",
-        "Aperture_com.google.zxing_core",
-        "Aperture_io.coil-kt_coil",
-        "Aperture_io.coil-kt_coil-video",
+        "StatixCamera_com.google.android.material_material",
+        "StatixCamera_androidx.camera_camera-core",
+        "StatixCamera_androidx.camera_camera-camera2",
+        "StatixCamera_androidx.camera_camera-lifecycle",
+        "StatixCamera_androidx.camera_camera-video",
+        "StatixCamera_androidx.camera_camera-view",
+        "StatixCamera_androidx.camera_camera-extensions",
+        "StatixCamera_androidx.media3_media3-exoplayer",
+        "StatixCamera_androidx.media3_media3-ui",
+        "StatixCamera_com.google.zxing_core",
+        "StatixCamera_io.coil-kt_coil",
+        "StatixCamera_io.coil-kt_coil-video",
     ],
     optional_uses_libs: [
         "androidx.camera.extensions.impl"
     ],
     required: [
-        "ApertureLensLauncher",
+        "FlashLensLauncher",
     ],
 
     optimize: {

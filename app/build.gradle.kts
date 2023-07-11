@@ -11,7 +11,7 @@ android {
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "org.lineageos.aperture"
+        applicationId = "com.statix.flash"
         minSdk = 26
         targetSdk = 33
         versionCode = 1
