@@ -14,7 +14,7 @@
         android:id="@+id/cameraModeHighlightButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="?attr/colorSecondaryContainer"
+        android:backgroundTint="?attr/colorPrimary"
         android:enabled="false"
         android:padding="0dp"
         app:iconPadding="0dp"
