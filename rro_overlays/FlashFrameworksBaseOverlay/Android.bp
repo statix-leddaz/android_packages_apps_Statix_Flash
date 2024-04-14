@@ -8,6 +8,6 @@ package {
 }
 
 runtime_resource_overlay {
-    name: "ApertureFrameworksBaseOverlay",
+    name: "FlashFrameworksBaseOverlay",
     product_specific: true,
 }

@@ -20,8 +20,8 @@ android_app {
     product_specific: true,
 
     required: [
-        "ApertureFrameworksBaseOverlay",
-        "ApertureLensLauncher",
+        "FlashFrameworksBaseOverlay",
+        "FlashLensLauncher",
     ],
 
     static_libs: [
