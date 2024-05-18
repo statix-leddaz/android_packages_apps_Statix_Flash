@@ -41,6 +41,7 @@ android_app {
         "Flash_androidx.camera_camera-lifecycle",
         "Flash_androidx.camera_camera-video",
         "Flash_androidx.camera_camera-view",
+        "Flash_androidx.camera_camera-viewfinder",
         "Flash_androidx.camera_camera-extensions",
         "Flash_androidx.media3_media3-exoplayer",
         "Flash_androidx.media3_media3-ui",

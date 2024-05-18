@@ -7,7 +7,7 @@
 
 android_library_import {
     name: "Flash_androidx.camera_camera-camera2-nodeps",
-    aars: ["androidx/camera/camera-camera2/1.4.0-alpha05/camera-camera2-1.4.0-alpha05.aar"],
+    aars: ["androidx/camera/camera-camera2/1.4.0-beta01/camera-camera2-1.4.0-beta01.aar"],
     sdk_version: "34",
     min_sdk_version: "14",
     apex_available: [
@@ -32,7 +32,7 @@ android_library {
         "//apex_available:platform",
         "//apex_available:anyapex",
     ],
-    manifest: "androidx/camera/camera-camera2/1.4.0-alpha05/AndroidManifest.xml",
+    manifest: "androidx/camera/camera-camera2/1.4.0-beta01/AndroidManifest.xml",
     static_libs: [
         "Flash_androidx.camera_camera-camera2-nodeps",
         "Flash_androidx.camera_camera-core",
@@ -47,7 +47,7 @@ android_library {
 
 android_library_import {
     name: "Flash_androidx.camera_camera-core-nodeps",
-    aars: ["androidx/camera/camera-core/1.4.0-alpha05/camera-core-1.4.0-alpha05.aar"],
+    aars: ["androidx/camera/camera-core/1.4.0-beta01/camera-core-1.4.0-beta01.aar"],
     sdk_version: "34",
     min_sdk_version: "14",
     apex_available: [
@@ -79,7 +79,7 @@ android_library {
         "//apex_available:platform",
         "//apex_available:anyapex",
     ],
-    manifest: "androidx/camera/camera-core/1.4.0-alpha05/AndroidManifest.xml",
+    manifest: "androidx/camera/camera-core/1.4.0-beta01/AndroidManifest.xml",
     static_libs: [
         "Flash_androidx.camera_camera-core-nodeps",
         "Flash_androidx.lifecycle_lifecycle-common",
@@ -100,7 +100,7 @@ android_library {
 
 android_library_import {
     name: "Flash_androidx.camera_camera-extensions-nodeps",
-    aars: ["androidx/camera/camera-extensions/1.4.0-alpha05/camera-extensions-1.4.0-alpha05.aar"],
+    aars: ["androidx/camera/camera-extensions/1.4.0-beta01/camera-extensions-1.4.0-beta01.aar"],
     sdk_version: "34",
     min_sdk_version: "14",
     apex_available: [
@@ -124,7 +124,7 @@ android_library {
         "//apex_available:platform",
         "//apex_available:anyapex",
     ],
-    manifest: "androidx/camera/camera-extensions/1.4.0-alpha05/AndroidManifest.xml",
+    manifest: "androidx/camera/camera-extensions/1.4.0-beta01/AndroidManifest.xml",
     static_libs: [
         "Flash_androidx.camera_camera-extensions-nodeps",
         "Flash_androidx.camera_camera-core",
@@ -138,7 +138,7 @@ android_library {
 
 android_library_import {
     name: "Flash_androidx.camera_camera-lifecycle-nodeps",
-    aars: ["androidx/camera/camera-lifecycle/1.4.0-alpha05/camera-lifecycle-1.4.0-alpha05.aar"],
+    aars: ["androidx/camera/camera-lifecycle/1.4.0-beta01/camera-lifecycle-1.4.0-beta01.aar"],
     sdk_version: "34",
     min_sdk_version: "14",
     apex_available: [
@@ -165,7 +165,7 @@ android_library {
         "//apex_available:platform",
         "//apex_available:anyapex",
     ],
-    manifest: "androidx/camera/camera-lifecycle/1.4.0-alpha05/AndroidManifest.xml",
+    manifest: "androidx/camera/camera-lifecycle/1.4.0-beta01/AndroidManifest.xml",
     static_libs: [
         "Flash_androidx.camera_camera-lifecycle-nodeps",
         "Flash_androidx.camera_camera-core",
@@ -182,7 +182,7 @@ android_library {
 
 android_library_import {
     name: "Flash_androidx.camera_camera-video-nodeps",
-    aars: ["androidx/camera/camera-video/1.4.0-alpha05/camera-video-1.4.0-alpha05.aar"],
+    aars: ["androidx/camera/camera-video/1.4.0-beta01/camera-video-1.4.0-beta01.aar"],
     sdk_version: "34",
     min_sdk_version: "14",
     apex_available: [
@@ -206,7 +206,7 @@ android_library {
         "//apex_available:platform",
         "//apex_available:anyapex",
     ],
-    manifest: "androidx/camera/camera-video/1.4.0-alpha05/AndroidManifest.xml",
+    manifest: "androidx/camera/camera-video/1.4.0-beta01/AndroidManifest.xml",
     static_libs: [
         "Flash_androidx.camera_camera-video-nodeps",
         "Flash_androidx.camera_camera-core",
@@ -220,7 +220,7 @@ android_library {
 
 android_library_import {
     name: "Flash_androidx.camera_camera-view-nodeps",
-    aars: ["androidx/camera/camera-view/1.4.0-alpha05/camera-view-1.4.0-alpha05.aar"],
+    aars: ["androidx/camera/camera-view/1.4.0-beta01/camera-view-1.4.0-beta01.aar"],
     sdk_version: "34",
     min_sdk_version: "14",
     apex_available: [
@@ -231,7 +231,6 @@ android_library_import {
         "Flash_androidx.camera_camera-core",
         "Flash_androidx.camera_camera-lifecycle",
         "Flash_androidx.camera_camera-video",
-        "Flash_androidx.camera_camera-viewfinder-core",
         "Flash_androidx.lifecycle_lifecycle-common",
         "androidx.annotation_annotation",
         "androidx.annotation_annotation-experimental",
@@ -251,13 +250,12 @@ android_library {
         "//apex_available:platform",
         "//apex_available:anyapex",
     ],
-    manifest: "androidx/camera/camera-view/1.4.0-alpha05/AndroidManifest.xml",
+    manifest: "androidx/camera/camera-view/1.4.0-beta01/AndroidManifest.xml",
     static_libs: [
         "Flash_androidx.camera_camera-view-nodeps",
         "Flash_androidx.camera_camera-core",
         "Flash_androidx.camera_camera-lifecycle",
         "Flash_androidx.camera_camera-video",
-        "Flash_androidx.camera_camera-viewfinder-core",
         "Flash_androidx.lifecycle_lifecycle-common",
         "androidx.annotation_annotation",
         "androidx.annotation_annotation-experimental",
@@ -271,8 +269,60 @@ android_library {
 }
 
 android_library_import {
+    name: "Flash_androidx.camera_camera-viewfinder-nodeps",
+    aars: ["androidx/camera/camera-viewfinder/1.4.0-alpha06/camera-viewfinder-1.4.0-alpha06.aar"],
+    sdk_version: "34",
+    min_sdk_version: "14",
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
+    static_libs: [
+        "Flash_androidx.camera_camera-viewfinder-core",
+        "androidx.annotation_annotation",
+        "androidx.annotation_annotation-experimental",
+        "androidx.appcompat_appcompat",
+        "androidx.concurrent_concurrent-futures",
+        "androidx.concurrent_concurrent-futures-ktx",
+        "androidx.core_core",
+        "androidx.test.espresso.idling-resource",
+        "auto_value_annotations",
+        "guava",
+        "kotlinx-coroutines-android",
+        "kotlinx-coroutines-core",
+    ],
+}
+
+android_library {
+    name: "Flash_androidx.camera_camera-viewfinder",
+    sdk_version: "34",
+    min_sdk_version: "14",
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
+    manifest: "androidx/camera/camera-viewfinder/1.4.0-alpha06/AndroidManifest.xml",
+    static_libs: [
+        "Flash_androidx.camera_camera-viewfinder-nodeps",
+        "Flash_androidx.camera_camera-viewfinder-core",
+        "androidx.annotation_annotation",
+        "androidx.annotation_annotation-experimental",
+        "androidx.appcompat_appcompat",
+        "androidx.concurrent_concurrent-futures",
+        "androidx.concurrent_concurrent-futures-ktx",
+        "androidx.core_core",
+        "androidx.test.espresso.idling-resource",
+        "auto_value_annotations",
+        "guava",
+        "kotlinx-coroutines-android",
+        "kotlinx-coroutines-core",
+    ],
+    java_version: "1.7",
+}
+
+android_library_import {
     name: "Flash_androidx.camera_camera-viewfinder-core-nodeps",
-    aars: ["androidx/camera/camera-viewfinder-core/1.4.0-alpha05/camera-viewfinder-core-1.4.0-alpha05.aar"],
+    aars: ["androidx/camera/camera-viewfinder-core/1.4.0-alpha06/camera-viewfinder-core-1.4.0-alpha06.aar"],
     sdk_version: "34",
     min_sdk_version: "14",
     apex_available: [
@@ -302,7 +352,7 @@ android_library {
         "//apex_available:platform",
         "//apex_available:anyapex",
     ],
-    manifest: "androidx/camera/camera-viewfinder-core/1.4.0-alpha05/AndroidManifest.xml",
+    manifest: "androidx/camera/camera-viewfinder-core/1.4.0-alpha06/AndroidManifest.xml",
     static_libs: [
         "Flash_androidx.camera_camera-viewfinder-core-nodeps",
         "androidx.annotation_annotation",
